@@ -21,6 +21,7 @@ class ViewController: UIViewController, ZoomTransitionProtocol, UINavigationCont
         if let navigationController = self.navigationController {
             animationController = ZoomTransition(navigationController: navigationController)
         }
+        self.navigationController?.delegate = animationController
         
         imageView.userInteractionEnabled = true
         let tapGesture = UITapGestureRecognizer(target: self, action: Selector("handleTapGesture:"))
@@ -34,7 +35,6 @@ class ViewController: UIViewController, ZoomTransitionProtocol, UINavigationCont
 
     func handleTapGesture(gesture: UITapGestureRecognizer){
         let imageViewController = ImageViewController(nibName: "ImageViewController", bundle: nil)
-        self.navigationController?.delegate = animationController
         self.navigationController?.pushViewController(imageViewController, animated: true)
     }
     
