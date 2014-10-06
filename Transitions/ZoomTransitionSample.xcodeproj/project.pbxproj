@@ -7,47 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6A802C2419E2406C000114EA /* monkey.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6A802C2319E2406C000114EA /* monkey.jpg */; };
-		6A97144B19DB815A00C9C36D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A97144A19DB815A00C9C36D /* AppDelegate.swift */; };
-		6A97144D19DB815A00C9C36D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A97144C19DB815A00C9C36D /* ViewController.swift */; };
-		6A97145019DB815A00C9C36D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A97144E19DB815A00C9C36D /* Main.storyboard */; };
-		6A97145219DB815A00C9C36D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A97145119DB815A00C9C36D /* Images.xcassets */; };
-		6A97145519DB815A00C9C36D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A97145319DB815A00C9C36D /* LaunchScreen.xib */; };
 		6A97146119DB815A00C9C36D /* TransitionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A97146019DB815A00C9C36D /* TransitionsTests.swift */; };
-		6A97146E19DB824F00C9C36D /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A97146C19DB824F00C9C36D /* ImageViewController.swift */; };
-		6A97146F19DB824F00C9C36D /* ImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A97146D19DB824F00C9C36D /* ImageViewController.xib */; };
-		6A97147119DB82BD00C9C36D /* ZoomTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A97147019DB82BD00C9C36D /* ZoomTransition.swift */; };
+		6AB2B0F619E2E98300EF0555 /* ZoomTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB2B0F519E2E98300EF0555 /* ZoomTransition.swift */; };
+		6AB2B0F819E2EA0900EF0555 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB2B0F719E2EA0900EF0555 /* AppDelegate.swift */; };
+		6AB2B0FE19E2EA1400EF0555 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB2B0F919E2EA1400EF0555 /* ImageViewController.swift */; };
+		6AB2B0FF19E2EA1400EF0555 /* ImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AB2B0FA19E2EA1400EF0555 /* ImageViewController.xib */; };
+		6AB2B10019E2EA1400EF0555 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6AB2B0FB19E2EA1400EF0555 /* Info.plist */; };
+		6AB2B10119E2EA1400EF0555 /* monkey.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6AB2B0FC19E2EA1400EF0555 /* monkey.jpg */; };
+		6AB2B10219E2EA1400EF0555 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB2B0FD19E2EA1400EF0555 /* ViewController.swift */; };
+		6AB2B10419E2EA2800EF0555 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AB2B10319E2EA2800EF0555 /* Images.xcassets */; };
+		6AB2B10A19E2EA5C00EF0555 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AB2B10619E2EA5C00EF0555 /* LaunchScreen.xib */; };
+		6AB2B11119E2EA9400EF0555 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AB2B10F19E2EA9400EF0555 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		6A97145B19DB815A00C9C36D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6A97143D19DB815A00C9C36D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6A97144419DB815A00C9C36D;
-			remoteInfo = Transitions;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		6A802C2319E2406C000114EA /* monkey.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = monkey.jpg; sourceTree = "<group>"; };
-		6A97144519DB815A00C9C36D /* Transitions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transitions.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6A97144919DB815A00C9C36D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6A97144A19DB815A00C9C36D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6A97144C19DB815A00C9C36D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6A97144F19DB815A00C9C36D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6A97145119DB815A00C9C36D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		6A97145419DB815A00C9C36D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		6A89D92619E2E7A5005FAD42 /* ZoomTransitionSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZoomTransitionSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A89D92719E2E7A5005FAD42 /* ZoomTransitionSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ZoomTransitionSample-Info.plist"; path = "/Users/tristan/Documents/Development/GitHub/ZoomTransition/Transitions/ZoomTransitionSample-Info.plist"; sourceTree = "<absolute>"; };
 		6A97145A19DB815A00C9C36D /* TransitionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransitionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A97145F19DB815A00C9C36D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A97146019DB815A00C9C36D /* TransitionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionsTests.swift; sourceTree = "<group>"; };
-		6A97146C19DB824F00C9C36D /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
-		6A97146D19DB824F00C9C36D /* ImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageViewController.xib; sourceTree = "<group>"; };
-		6A97147019DB82BD00C9C36D /* ZoomTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomTransition.swift; sourceTree = "<group>"; };
+		6AB2B0F519E2E98300EF0555 /* ZoomTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomTransition.swift; sourceTree = "<group>"; };
+		6AB2B0F719E2EA0900EF0555 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ZoomTransitionSample/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		6AB2B0F919E2EA1400EF0555 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageViewController.swift; path = ZoomTransitionSample/ImageViewController.swift; sourceTree = SOURCE_ROOT; };
+		6AB2B0FA19E2EA1400EF0555 /* ImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ImageViewController.xib; path = ZoomTransitionSample/ImageViewController.xib; sourceTree = SOURCE_ROOT; };
+		6AB2B0FB19E2EA1400EF0555 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ZoomTransitionSample/Info.plist; sourceTree = SOURCE_ROOT; };
+		6AB2B0FC19E2EA1400EF0555 /* monkey.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = monkey.jpg; path = ZoomTransitionSample/monkey.jpg; sourceTree = SOURCE_ROOT; };
+		6AB2B0FD19E2EA1400EF0555 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ZoomTransitionSample/ViewController.swift; sourceTree = SOURCE_ROOT; };
+		6AB2B10319E2EA2800EF0555 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ZoomTransitionSample/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		6AB2B10719E2EA5C00EF0555 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		6AB2B11019E2EA9400EF0555 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ZoomTransitionSample/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6A97144219DB815A00C9C36D /* Frameworks */ = {
+		6A89D91C19E2E7A5005FAD42 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -67,42 +59,44 @@
 		6A97143C19DB815A00C9C36D = {
 			isa = PBXGroup;
 			children = (
-				6A97144719DB815A00C9C36D /* Transitions */,
+				6AB2B0F419E2E98300EF0555 /* ZoomTransition */,
+				6A97144719DB815A00C9C36D /* ZoomTransitionSample */,
 				6A97145D19DB815A00C9C36D /* TransitionsTests */,
 				6A97144619DB815A00C9C36D /* Products */,
+				6A89D92719E2E7A5005FAD42 /* ZoomTransitionSample-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
 		6A97144619DB815A00C9C36D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6A97144519DB815A00C9C36D /* Transitions.app */,
 				6A97145A19DB815A00C9C36D /* TransitionsTests.xctest */,
+				6A89D92619E2E7A5005FAD42 /* ZoomTransitionSample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6A97144719DB815A00C9C36D /* Transitions */ = {
+		6A97144719DB815A00C9C36D /* ZoomTransitionSample */ = {
 			isa = PBXGroup;
 			children = (
-				6A97144A19DB815A00C9C36D /* AppDelegate.swift */,
-				6A97144C19DB815A00C9C36D /* ViewController.swift */,
-				6A97144E19DB815A00C9C36D /* Main.storyboard */,
-				6A97145119DB815A00C9C36D /* Images.xcassets */,
-				6A97145319DB815A00C9C36D /* LaunchScreen.xib */,
-				6A97146C19DB824F00C9C36D /* ImageViewController.swift */,
-				6A97146D19DB824F00C9C36D /* ImageViewController.xib */,
-				6A97147019DB82BD00C9C36D /* ZoomTransition.swift */,
-				6A802C2319E2406C000114EA /* monkey.jpg */,
+				6AB2B0F719E2EA0900EF0555 /* AppDelegate.swift */,
+				6AB2B10F19E2EA9400EF0555 /* Main.storyboard */,
+				6AB2B0FD19E2EA1400EF0555 /* ViewController.swift */,
+				6AB2B0F919E2EA1400EF0555 /* ImageViewController.swift */,
+				6AB2B0FA19E2EA1400EF0555 /* ImageViewController.xib */,
+				6AB2B0FC19E2EA1400EF0555 /* monkey.jpg */,
+				6AB2B10519E2EA5C00EF0555 /* Base.lproj */,
+				6AB2B10319E2EA2800EF0555 /* Images.xcassets */,
 				6A97144819DB815A00C9C36D /* Supporting Files */,
 			);
+			name = ZoomTransitionSample;
 			path = Transitions;
 			sourceTree = "<group>";
 		};
 		6A97144819DB815A00C9C36D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6A97144919DB815A00C9C36D /* Info.plist */,
+				6AB2B0FB19E2EA1400EF0555 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -124,24 +118,42 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6AB2B0F419E2E98300EF0555 /* ZoomTransition */ = {
+			isa = PBXGroup;
+			children = (
+				6AB2B0F519E2E98300EF0555 /* ZoomTransition.swift */,
+			);
+			name = ZoomTransition;
+			path = ../ZoomTransition;
+			sourceTree = "<group>";
+		};
+		6AB2B10519E2EA5C00EF0555 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				6AB2B10619E2EA5C00EF0555 /* LaunchScreen.xib */,
+			);
+			name = Base.lproj;
+			path = ZoomTransitionSample/Base.lproj;
+			sourceTree = SOURCE_ROOT;
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6A97144419DB815A00C9C36D /* Transitions */ = {
+		6A89D91619E2E7A5005FAD42 /* ZoomTransitionSample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6A97146419DB815A00C9C36D /* Build configuration list for PBXNativeTarget "Transitions" */;
+			buildConfigurationList = 6A89D92319E2E7A5005FAD42 /* Build configuration list for PBXNativeTarget "ZoomTransitionSample" */;
 			buildPhases = (
-				6A97144119DB815A00C9C36D /* Sources */,
-				6A97144219DB815A00C9C36D /* Frameworks */,
-				6A97144319DB815A00C9C36D /* Resources */,
+				6A89D91719E2E7A5005FAD42 /* Sources */,
+				6A89D91C19E2E7A5005FAD42 /* Frameworks */,
+				6A89D91D19E2E7A5005FAD42 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Transitions;
+			name = ZoomTransitionSample;
 			productName = Transitions;
-			productReference = 6A97144519DB815A00C9C36D /* Transitions.app */;
+			productReference = 6A89D92619E2E7A5005FAD42 /* ZoomTransitionSample.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6A97145919DB815A00C9C36D /* TransitionsTests */ = {
@@ -155,7 +167,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				6A97145C19DB815A00C9C36D /* PBXTargetDependency */,
 			);
 			name = TransitionsTests;
 			productName = TransitionsTests;
@@ -171,16 +182,13 @@
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = him;
 				TargetAttributes = {
-					6A97144419DB815A00C9C36D = {
-						CreatedOnToolsVersion = 6.0.1;
-					};
 					6A97145919DB815A00C9C36D = {
 						CreatedOnToolsVersion = 6.0.1;
 						TestTargetID = 6A97144419DB815A00C9C36D;
 					};
 				};
 			};
-			buildConfigurationList = 6A97144019DB815A00C9C36D /* Build configuration list for PBXProject "Transitions" */;
+			buildConfigurationList = 6A97144019DB815A00C9C36D /* Build configuration list for PBXProject "ZoomTransitionSample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -193,22 +201,23 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6A97144419DB815A00C9C36D /* Transitions */,
+				6A89D91619E2E7A5005FAD42 /* ZoomTransitionSample */,
 				6A97145919DB815A00C9C36D /* TransitionsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6A97144319DB815A00C9C36D /* Resources */ = {
+		6A89D91D19E2E7A5005FAD42 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A97145019DB815A00C9C36D /* Main.storyboard in Resources */,
-				6A97145519DB815A00C9C36D /* LaunchScreen.xib in Resources */,
-				6A802C2419E2406C000114EA /* monkey.jpg in Resources */,
-				6A97146F19DB824F00C9C36D /* ImageViewController.xib in Resources */,
-				6A97145219DB815A00C9C36D /* Images.xcassets in Resources */,
+				6AB2B10A19E2EA5C00EF0555 /* LaunchScreen.xib in Resources */,
+				6AB2B10119E2EA1400EF0555 /* monkey.jpg in Resources */,
+				6AB2B10419E2EA2800EF0555 /* Images.xcassets in Resources */,
+				6AB2B11119E2EA9400EF0555 /* Main.storyboard in Resources */,
+				6AB2B0FF19E2EA1400EF0555 /* ImageViewController.xib in Resources */,
+				6AB2B10019E2EA1400EF0555 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,14 +231,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6A97144119DB815A00C9C36D /* Sources */ = {
+		6A89D91719E2E7A5005FAD42 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A97144D19DB815A00C9C36D /* ViewController.swift in Sources */,
-				6A97146E19DB824F00C9C36D /* ImageViewController.swift in Sources */,
-				6A97147119DB82BD00C9C36D /* ZoomTransition.swift in Sources */,
-				6A97144B19DB815A00C9C36D /* AppDelegate.swift in Sources */,
+				6AB2B10219E2EA1400EF0555 /* ViewController.swift in Sources */,
+				6AB2B0F819E2EA0900EF0555 /* AppDelegate.swift in Sources */,
+				6AB2B0FE19E2EA1400EF0555 /* ImageViewController.swift in Sources */,
+				6AB2B0F619E2E98300EF0555 /* ZoomTransition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,34 +252,48 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		6A97145C19DB815A00C9C36D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6A97144419DB815A00C9C36D /* Transitions */;
-			targetProxy = 6A97145B19DB815A00C9C36D /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		6A97144E19DB815A00C9C36D /* Main.storyboard */ = {
+		6AB2B10619E2EA5C00EF0555 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6A97144F19DB815A00C9C36D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		6A97145319DB815A00C9C36D /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6A97145419DB815A00C9C36D /* Base */,
+				6AB2B10719E2EA5C00EF0555 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		6AB2B10F19E2EA9400EF0555 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6AB2B11019E2EA9400EF0555 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		6A89D92419E2E7A5005FAD42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "ZoomTransitionSample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = ZoomTransitionSample;
+			};
+			name = Debug;
+		};
+		6A89D92519E2E7A5005FAD42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "ZoomTransitionSample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = ZoomTransitionSample;
+			};
+			name = Release;
+		};
 		6A97146219DB815A00C9C36D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -348,28 +371,6 @@
 			};
 			name = Release;
 		};
-		6A97146519DB815A00C9C36D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Transitions/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		6A97146619DB815A00C9C36D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Transitions/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 		6A97146819DB815A00C9C36D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -407,20 +408,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6A97144019DB815A00C9C36D /* Build configuration list for PBXProject "Transitions" */ = {
+		6A89D92319E2E7A5005FAD42 /* Build configuration list for PBXNativeTarget "ZoomTransitionSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6A97146219DB815A00C9C36D /* Debug */,
-				6A97146319DB815A00C9C36D /* Release */,
+				6A89D92419E2E7A5005FAD42 /* Debug */,
+				6A89D92519E2E7A5005FAD42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6A97146419DB815A00C9C36D /* Build configuration list for PBXNativeTarget "Transitions" */ = {
+		6A97144019DB815A00C9C36D /* Build configuration list for PBXProject "ZoomTransitionSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6A97146519DB815A00C9C36D /* Debug */,
-				6A97146619DB815A00C9C36D /* Release */,
+				6A97146219DB815A00C9C36D /* Debug */,
+				6A97146319DB815A00C9C36D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
