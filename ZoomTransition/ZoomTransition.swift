@@ -231,14 +231,21 @@ class ZoomTransition: UIPercentDrivenInteractiveTransition, UIViewControllerAnim
             // calculate current scale of transitionView
             let finalScale = animationFrame!.width / self.fromFrame!.size.width
             let currentScale = (transitionView!.frame.size.width / self.fromFrame!.size.width)
-            var normalizedVelocity = gesture.velocity / (finalScale - currentScale)
+            var delta = finalScale - currentScale
+            var normalizedVelocity = gesture.velocity / delta
 
-            // add upper bound on normalized velocity
+            // add upper and lower bound on normalized velocity
             normalizedVelocity = normalizedVelocity > 20 ? 20 : normalizedVelocity
+            normalizedVelocity = normalizedVelocity < -20 ? -20 : normalizedVelocity
             
-            //println("velocity \(gesture.velocity)")
-            //println("normal \(finalScale - currentScale)")
+            //println("---\nvelocity \(gesture.velocity)")
+            //println("normal \(delta)")
             //println("velocity normal \(normalizedVelocity)")
+
+            // no need to normalize the velocity for low velocities
+            if gesture.velocity < 3 && gesture.velocity > -3 {
+                normalizedVelocity = gesture.velocity
+            }
             
             let duration = transitionDuration(transitionContext!)
             

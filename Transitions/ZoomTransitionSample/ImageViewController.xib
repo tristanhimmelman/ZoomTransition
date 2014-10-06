@@ -6,7 +6,7 @@
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImageViewController" customModule="Transitions" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImageViewController" customModule="ZoomTransitionSample" customModuleProvider="target">
             <connections>
                 <outlet property="imageView" destination="Omu-tB-ZF1" id="clP-JM-jva"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -38,7 +38,7 @@
                     <exclude reference="A6c-nK-nlE"/>
                 </mask>
             </variation>
-            <point key="canvasLocation" x="69" y="87"/>
+            <point key="canvasLocation" x="70" y="12"/>
         </view>
     </objects>
     <resources>

@@ -24,7 +24,7 @@
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Transitions" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="ZoomTransitionSample" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -33,19 +33,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="monkey.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="UVR-Bo-gKr">
-                                <rect key="frame" x="251" y="250" width="100" height="100"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="monkey.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="UVR-Bo-gKr">
+                                <rect key="frame" x="238" y="238" width="125" height="125"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="6Nq-e1-rZl"/>
+                                    <constraint firstAttribute="height" constant="125" id="VfB-hf-pXe"/>
+                                    <constraint firstAttribute="width" constant="125" id="XyL-hm-vRx"/>
                                     <constraint firstAttribute="height" constant="100" id="qKh-NZ-4PY"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="6Nq-e1-rZl"/>
+                                        <exclude reference="qKh-NZ-4PY"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="qca-MR-y5Y" appends="YES" id="pVG-7D-qbI"/>
                                 </connections>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="UVR-Bo-gKr" secondAttribute="centerX" constant="-0.5" id="naJ-Ex-Qhr"/>
                             <constraint firstAttribute="centerY" secondItem="UVR-Bo-gKr" secondAttribute="centerY" constant="0.5" id="y4k-13-m5m"/>
