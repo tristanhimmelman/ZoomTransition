@@ -5,6 +5,8 @@ An easy to use interactive zoom transition for presenting view controllers onto 
 
 ZoomTransition supports pinch, rotate and pan gestures while dismissing the presented view controller. 
 
+![Screenshot](https://raw.githubusercontent.com/tristanhimmelman/ZoomTransition/master/example.gif)
+
 To add to your app, simply create a ZoomTransition by passing the current NavigationController
 Then set the ZoomTransition object be the NavigationController delegate
 ```swift
