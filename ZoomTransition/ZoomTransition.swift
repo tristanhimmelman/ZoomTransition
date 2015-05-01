@@ -50,11 +50,11 @@ class ZoomTransition: UIPercentDrivenInteractiveTransition, UIViewControllerAnim
         fromViewController = transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey);
         toViewController = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey);
         
-        if let viewController = toViewController {
-            toView = (viewController as ZoomTransitionProtocol).viewForTransition()
+        if let viewController = toViewController as? ZoomTransitionProtocol {
+            toView = viewController.viewForTransition()
         }
-        if let viewController = fromViewController {
-            fromView = (viewController as ZoomTransitionProtocol).viewForTransition()
+        if let viewController = fromViewController as? ZoomTransitionProtocol {
+            fromView = viewController.viewForTransition()
         }
         
         // make sure toViewController is layed out
@@ -80,8 +80,8 @@ class ZoomTransition: UIPercentDrivenInteractiveTransition, UIViewControllerAnim
         toFrame = container.convertRect(toView!.bounds, fromView: toView)
         
         // Create a copy of the fromView and add it to the Transition Container
-        if (fromView?.isKindOfClass(UIImageView.classForCoder()) != nil){
-            transitionView = UIImageView(image: (fromView as UIImageView).image)
+        if let imageView = fromView as? UIImageView {
+            transitionView = UIImageView(image: imageView.image)
         } else {
             transitionView = fromView?.snapshotViewAfterScreenUpdates(false);
         }
