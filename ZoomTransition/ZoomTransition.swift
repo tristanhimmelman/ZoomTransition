@@ -9,11 +9,11 @@
 import Foundation
 import UIKit
 
-@objc protocol ZoomTransitionProtocol {
+@objc public protocol ZoomTransitionProtocol {
     func viewForTransition() -> UIView
 }
 
-class ZoomTransition: UIPercentDrivenInteractiveTransition, UIViewControllerAnimatedTransitioning, UINavigationControllerDelegate, UIGestureRecognizerDelegate {
+public class ZoomTransition: UIPercentDrivenInteractiveTransition, UIViewControllerAnimatedTransitioning, UINavigationControllerDelegate, UIGestureRecognizerDelegate {
     
     private var navigationController: UINavigationController
     private var fromView: UIView?
@@ -37,7 +37,7 @@ class ZoomTransition: UIPercentDrivenInteractiveTransition, UIViewControllerAnim
     
     // MARK: - UIViewControllerAnimatedTransition Protocol
     
-    func transitionDuration(transitionContext: UIViewControllerContextTransitioning) -> NSTimeInterval {
+    public func transitionDuration(transitionContext: UIViewControllerContextTransitioning) -> NSTimeInterval {
         if interactive {
             return 0.7
         }
@@ -45,7 +45,7 @@ class ZoomTransition: UIPercentDrivenInteractiveTransition, UIViewControllerAnim
         return 0.5
     }
     
-    func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
+    public func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
         self.transitionContext = transitionContext
         fromViewController = transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey);
         toViewController = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey);
@@ -295,7 +295,7 @@ class ZoomTransition: UIPercentDrivenInteractiveTransition, UIViewControllerAnim
     
     // MARK: - UINavigationControllerDelegate
     
-    func navigationController(navigationController: UINavigationController, animationControllerForOperation operation: UINavigationControllerOperation, fromViewController fromVC: UIViewController, toViewController toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    public func navigationController(navigationController: UINavigationController, animationControllerForOperation operation: UINavigationControllerOperation, fromViewController fromVC: UIViewController, toViewController toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         
         if (fromVC.conformsToProtocol(ZoomTransitionProtocol) && toVC.conformsToProtocol(ZoomTransitionProtocol)){
             return self
@@ -304,7 +304,7 @@ class ZoomTransition: UIPercentDrivenInteractiveTransition, UIViewControllerAnim
         return nil;
     }
 
-    func navigationController(navigationController: UINavigationController, interactionControllerForAnimationController animationController: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
+    public func navigationController(navigationController: UINavigationController, interactionControllerForAnimationController animationController: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
         
         if (self.interactive){
             return self
@@ -315,7 +315,7 @@ class ZoomTransition: UIPercentDrivenInteractiveTransition, UIViewControllerAnim
     
     // MARK: - UIGestureRecognizerDelegate
     
-    func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWithGestureRecognizer otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+    public func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWithGestureRecognizer otherGestureRecognizer: UIGestureRecognizer) -> Bool {
         return true
     }
 }
