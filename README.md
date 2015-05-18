@@ -1,5 +1,6 @@
 ZoomTransition
 ==============
+[![CocoaPods](https://img.shields.io/cocoapods/v/ZoomTransition.svg)](https://github.com/tristanhimmelman/ZoomTransition)
 
 An easy to use interactive zoom transition for presenting view controllers onto a navigation stack. This transition mimics the iOS 7 & 8 photos app. 
 
