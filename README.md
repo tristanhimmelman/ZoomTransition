@@ -8,8 +8,8 @@ ZoomTransition supports pinch, rotate and pan gestures while dismissing the pres
 
 ![Screenshot](https://raw.githubusercontent.com/tristanhimmelman/ZoomTransition/master/example.gif)
 
-To add to your app, simply create a ZoomTransition by passing the current NavigationController
-Then set the ZoomTransition object be the NavigationController delegate
+To use the transition in your app, simply create a ZoomTransition object by passing in the current NavigationController.
+Then set the ZoomTransition object to be the NavigationControllers delegate
 ```swift
 if let navigationController = self.navigationController {
     self.animationController = ZoomTransition(navigationController: navigationController)
