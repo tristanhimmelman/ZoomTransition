@@ -30,8 +30,8 @@ class ImageViewController: UIViewController, ZoomTransitionProtocol {
     override func updateViewConstraints() {
         super.updateViewConstraints()
         
-        let topGuide = self.topLayoutGuide;
-        let views = ["_imageView": imageView, "topGuide": topGuide]
+//        let topGuide = self.topLayoutGuide;
+//        let views = ["_imageView": imageView, "topGuide": topGuide]
 //        let constraint:[AnyObject]! = NSLayoutConstraint.constraintsWithVisualFormat("V:[topGuide][_imageView]", options: NSLayoutFormatOptions.allZeros, metrics: nil, views: views)
 //        self.view.addConstraints(constraint)
     }
