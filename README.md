@@ -1,6 +1,7 @@
 ZoomTransition
 ==============
 [![CocoaPods](https://img.shields.io/cocoapods/v/ZoomTransition.svg)](https://github.com/tristanhimmelman/ZoomTransition)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 An easy to use interactive zoom transition for presenting view controllers onto a navigation stack. This transition mimics the iOS 7 & 8 photos app. 
 
@@ -32,6 +33,6 @@ func viewForTransition() -> UIView {
 
 ZoomTransition can be easily added to your project using [Cocoapods](https://cocoapods.org/) by adding the following to your Podfile:
 
-`pod 'ZoomTransition', '~> 0.1'`
+`pod 'ZoomTransition', '~> 0.2'`
 
 Otherwise you can include ZoomTransition.swift directly to your project.

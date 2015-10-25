@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name = "ZoomTransition"
-  s.version = "0.1"
+  s.version = "0.2"
   s.license = { :type => "MIT", :file => "LICENSE" }
   s.summary = "Interactive zoom transition for presenting view controllers written in Swift"
   s.homepage = "https://github.com/tristanhimmelman/ZoomTransition"
