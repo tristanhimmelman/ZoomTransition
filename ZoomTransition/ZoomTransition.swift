@@ -31,7 +31,7 @@ public class ZoomTransition: UIPercentDrivenInteractiveTransition, UIViewControl
     
     var allowsInteractiveGesture = true
     
-    init(navigationController: UINavigationController) {
+    public init(navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
     
