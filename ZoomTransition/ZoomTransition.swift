@@ -132,7 +132,7 @@ public class ZoomTransition: UIPercentDrivenInteractiveTransition, UIViewControl
                 self.transitionView?.frame = self.toFrame!
             }
     
-        }) { (Bool finished) -> Void in
+        }) { (finished) -> Void in
             self.transitionView?.removeFromSuperview()
             self.fromViewController?.view.alpha = 1
             self.toView?.hidden = false
@@ -163,7 +163,7 @@ public class ZoomTransition: UIPercentDrivenInteractiveTransition, UIViewControl
             if (self.interactive == false){
                 self.transitionView?.frame = self.toFrame!
             }
-        }) { (Bool finished) -> Void in
+        }) { (finished) -> Void in
             if self.interactive == false {
                 self.zoomOutTransitionComplete()
             }
@@ -257,7 +257,7 @@ public class ZoomTransition: UIPercentDrivenInteractiveTransition, UIViewControl
                 }
                 self.transitionView?.contentMode = self.toView!.contentMode
                 
-            }, completion: { (Bool finished) -> Void in
+            }, completion: { (finished) -> Void in
                 self.zoomOutTransitionComplete()
                 self.interactive = false
             })
