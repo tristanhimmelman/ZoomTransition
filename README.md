@@ -33,6 +33,6 @@ func viewForTransition() -> UIView {
 
 ZoomTransition can be easily added to your project using [CocoaPods](https://cocoapods.org/) by adding the following to your Podfile:
 
-`pod 'ZoomTransition', '~> 0.2'`
+`pod 'ZoomTransition', '~> 0.3'`
 
 Otherwise you can include ZoomTransition.swift directly to your project.
